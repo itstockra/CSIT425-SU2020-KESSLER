@@ -1,0 +1,19 @@
+Matthew Kessler
+Structured Requirement Specification:
+
+Requirement:    The system shall return a list of cars by specified capacity.
+Function:       Return capacity-constrained list of cars
+Description:    Searches car list by capacity to find all the cars that meet the customers capacity preference.
+Inputs:         Customers capacity preference.
+Source:         From customer.
+Outputs:        Listing of cars and their details that match the customers capacity preference.
+Destination:    Printed to the screen.
+Action:         The list of cars to be printed to the screen will match the customers desired capacity preference. If
+                no cars are found, print "Sorry, no cars with a capacity of [x]." To find the list of matches function will
+                iterate through the list testing each cars capacity against the customers selection. If a test passes, 
+                the cars information will be printed to the screen.
+Requires:       Selection of desired capacity from the customer.
+Precondition:   List of cars is accessible.
+Postcondition:  None.
+Side effects:   None.    
+
