@@ -28,6 +28,8 @@ class CarRental {
 
         int getCapacity() { return capacity; }
         
+        // printInfo function
+        // prints formatted information for single car in list
         void printInfo() {
             cout << left << setw(7)<< quantity << setw(6) << year << setw(10) << brand << setw(12) << model 
             << setw(7) << type << setw(10) << capacity << endl;

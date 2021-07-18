@@ -8,7 +8,7 @@ using namespace std;
 
 int main()
 {
-    // Construct car list object and fill list.
+    // Construct car list object and populate list.
     CarList *aList = new CarList();
     aList->addCar(5, 1975, "Ford", "F-150", "Truck", 3);
     aList->addCar(2, 2004, "GMC", "Yukon", "SUV", 8);
@@ -21,7 +21,7 @@ int main()
     aList->addCar(2, 2017, "Kia", "Telluride", "SUV", 8);
     aList->addCar(1, 2019, "BMW", "3 Series", "Sedan", 5);
     
-    char selection = 0;
+    char selection = '0';
     
     // Begin menu loop
     menuStart:
@@ -72,8 +72,6 @@ int main()
                 goto searchAgain;
             }
         }
-        // Option 3 selected.
-        // Quit the program by jumping to end of loop.
         else {
             cout << "Invalid selection, try again." << endl;
             goto startOfSelection;
@@ -81,6 +79,8 @@ int main()
         
 
     }
+    // Option 3 selected.
+    // Quit the program by jumping to end of loop.
     else if (selection == '3') {
         goto endOfLoop;
     }

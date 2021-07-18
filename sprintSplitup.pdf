@@ -5,6 +5,6 @@ Develop the data structure to store the information about rental cars. Also, dev
 cars to the list and a function to print the entire list of cars.
 
 Sprint 2:
-Develop a feature in the system that allows the customer to specify which car they want dending on
+Develop a feature in the system that allows the customer to specify which car they want dependent on
 its capacity. Function will search through the list of cars and print the selections that have 
 matched the customers input. 
