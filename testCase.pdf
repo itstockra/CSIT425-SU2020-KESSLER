@@ -1,6 +1,6 @@
 Objective: Test the functional and non-functional requirements of the system to verify they meet the 
            customers specification. The system should respond accordingly and recover from invalid 
-           inputs. For valid inputs the system should respond with the valid outputs. 
+           inputs. For valid inputs the system should respond with valid outputs. 
 
 -----------------------------------------------------------------------------------------------
 |   Test Input         |   Expected Output       |    Real Output           |    Pass/Fail    |
