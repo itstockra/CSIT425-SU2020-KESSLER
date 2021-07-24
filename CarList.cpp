@@ -61,11 +61,16 @@ void CarList::printAll() {
     int i = 1;
     cout<< left << setw(4) << "#" << setw(7) <<"Quant." << setw(6) <<"Year" 
     << setw(10) <<"Brand" << setw(12) <<"Model" << setw(7) <<"Type" << setw(10) << "Capacity" << endl;
-    while (iterPtr != nullptr) {
-        cout << setw(4) << i;
-        iterPtr->printInfo();
-        iterPtr = iterPtr->getNext();
-        i++;
+    if (!isEmpty()) {
+        while (iterPtr != nullptr) {
+            cout << setw(4) << i;
+            iterPtr->printInfo();
+            iterPtr = iterPtr->getNext();
+            i++;
+        }
+    }
+    else {
+        cout << "No cars in the list!" << endl;
     }
 }
 

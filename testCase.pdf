@@ -1,0 +1,36 @@
+Objective: Test the functional and non-functional requirements of the system to verify they meet the 
+           customers specification. The system should respond accordingly and recover from invalid 
+           inputs. For valid inputs the system should respond with the valid outputs. 
+
+-----------------------------------------------------------------------------------------------
+|   Test Input         |   Expected Output       |    Real Output           |    Pass/Fail    |
+-----------------------------------------------------------------------------------------------
+|  selection = 0       |  "Invalid entry,        |  "Invalid entry,         |     Pass        |
+|                      |   please try again"     |  please try again"       |                 |
+----------------------------------------------------------------------------------------------
+|  selection = 1       | Display full car list   |  Displayed full car list |     Pass        |
+-----------------------------------------------------------------------------------------------
+|  selection = 1       | "No cars in list!"      |  "No cars in list!"      |     Pass        | 
+|  *no cars in list*   |                         |                          |                 |
+-----------------------------------------------------------------------------------------------
+|  selection = 2       | Display all cars with   |  Displayed all cars in   |     Pass        |
+|  custCapString = 4   | a capacity of 4         |  list with capacity of 4 |                 |
+-----------------------------------------------------------------------------------------------
+|  selection = 2       | "Invalid capacity,      |  "Invalid capacity,      |     Pass        |
+|  custCapString = "b" |  try again."            |   try again."            |                 |
+-----------------------------------------------------------------------------------------------
+|  yesOrNo = "y"       | Searching cars by       |  Car search by capacity  |     Pass        |
+|                      | capacity process        |  process restarted       |                 |
+|                      | restarts                |                          |                 |
+-----------------------------------------------------------------------------------------------
+|  yesOrNo = "x"       | "Invalid entry." prompt | "Invalid entry." user is |     Pass        |
+|                      |  user for input again   |  prompted for input      |                 |
+-----------------------------------------------------------------------------------------------
+|  selection = 2       | "Sorry, no cars with    |  "Sorry, no cars with    |     Pass        |
+|  custCapString = 20  |  a capacity of 20."     |   a capacity of 20."     |                 |
+-----------------------------------------------------------------------------------------------
+|  selection = 3       |  Program should exit    |  Program exits with      |     Pass        |  
+|                      |  with return value 0    |  return value of 0       |                 |
+-----------------------------------------------------------------------------------------------
+
+
